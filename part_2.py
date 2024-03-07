@@ -176,8 +176,6 @@ while iteration < max_total_iterations:
     # be updated as agents change their colors during the iterations
     colors = initial_random_colors.copy()
 
-    # While there are still color conflicts in the graph
-    # print(f"{len(curr_colors_list)} available colors: Starting to loop through node agents")
     curr_color_list_iteration = 0
 
     # Try to achieve zero conflicts.

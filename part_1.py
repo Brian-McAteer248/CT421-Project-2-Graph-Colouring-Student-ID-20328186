@@ -123,7 +123,7 @@ for num_colors_to_include in range(len(all_available_colors), 2, -1):
     # While there are still color conflicts in the graph
     print(f"{len(curr_colors_list)} available colors: Starting to loop through node agents")
     iteration = 0
-    # Try to achieve zero conflicts. Maximum iterations is 10000.
+    # Try to achieve zero conflicts.
     while get_color_conflicts(adj_matrix, colors) != 0 and iteration < max_iterations_per_color_list:
         iteration += 1
         print(f"Iteration: {iteration}, Initial conflicts: {initial_conflicts}, Current conflicts: "
